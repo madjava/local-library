@@ -6,9 +6,10 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const compression = require('compression');
 const helmet = require('helmet'); 
+const local_db_uri = 'mongodb://127.0.0.1:27017/local-library?retryWrites=true';
 
-const mongoDBUrl = 'mongodb://127.0.0.1:27017/local-library?retryWrites=true';
-mongoose.connect(mongoDBUrl, { useNewUrlParser: true, useUnifiedTopology: true});
+const connection_url = process.env.MONGODB_URI || local_db_uri;
+mongoose.connect(connection_url, { useNewUrlParser: true, useUnifiedTopology: true});
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error'));
 
