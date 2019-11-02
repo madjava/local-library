@@ -1,21 +1,55 @@
+html,
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100vh;
 }
 
-a {
-  color: #00B7FF;
+body {
+  /* padding: 50px;*/
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  color: #868e96;
+}
+
+li a {
+  color: #D1D7D9;
+  text-decoration: none;
+  line-height: 35px;
+}
+
+li a:visited {
+  color: #D1D7D9;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.spacer-li a {
+  color: #4d5155;
+}
+
+.spacer-li a:visited {
+  color: #43668a;
+}
+
+.spacer-li a:hover {
+  color: #11253a;
 }
 
 .sidebar-nav {
-    margin-top: 20px;
-    padding: 0;
-    list-style: none;
+  text-align: center;
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+  letter-spacing: .05rem;
+  text-transform: uppercase;
+  font-weight: 800;
 }
 
-
 dd {
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 .home-list li,
@@ -23,7 +57,101 @@ dd {
 .spacer-li {
   margin-bottom: 5px;
 }
-.user-form-input{
+
+.user-form-input {
   margin-bottom: 20px;
 }
- 
+
+.container-fluid,
+.container-fluid .row {
+  height: 100vh;
+}
+
+.row .col-sm-2 {
+  background: #43668a !important;
+  height: 100vh;
+}
+
+.row .col-sm-10 {
+  height: 100vh;
+  color: #495057;
+  padding: 4%;
+  font-size: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #343a40;
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.navbar-brand {
+  margin: auto;
+  padding: none;
+  float: none;
+  height: auto;
+}
+
+.navbar-brand .img-profile {
+  max-width: 16rem;
+  max-height: 16rem;
+  border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  border-radius: 80px;
+}
+
+.navbar-brand img {
+  display: block;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  margin: 35px 0 25px 0;
+}
+
+.profile .nav-brand {
+  padding: none;
+  height: auto;
+}
+
+.support-section {
+  display: flex;
+  flex-direction: row;
+  margin: 3% 0;
+}
+
+.support-section #left {
+  margin: 0 0 0 20px;
+}
+
+.support-section #left img {
+  height: 450px;
+  border: 0.5rem solid rgba(95, 149, 215, 0.38);
+}
+
+.support-section #right {
+  margin: 0 0 0 20px;
+}
+
+.support-section #right a {
+  color: black;
+}

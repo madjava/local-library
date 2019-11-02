@@ -5,15 +5,22 @@ html(lang='en')
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i')
+    link(rel='stylesheet', href='/vendor/fontawesome-free/css/all.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
-    link(rel='stylesheet', href='/stylesheets/style.css')
   body
     div(class='container-fluid')
       div(class='row')
-        div(class='col-sm-3')
+        div(class='col-sm-2')
           block sidebar
             ul(class='sidebar-nav')
+              li
+                span(class='profile')
+                  a(class="navbar-brand", href='/support' title='WARNING - You might lose your coffee')
+                    img(class='img-fluid img-profile rounded-circle mx-auto mb-2', src='/images/avartar.jpg')
               li 
                 a(href='/catalog') Home
               li 
@@ -27,14 +34,14 @@ html(lang='en')
               li 
                 hr
               li 
-                a(href='/catalog/author/create') Create new author
+                a(href='/catalog/author/create') New author
               li 
-                a(href='/catalog/genre/create') Create new genre
+                a(href='/catalog/genre/create') New genre
               li 
-                a(href='/catalog/book/create') Create new book
+                a(href='/catalog/book/create') New book
               li 
-                a(href='/catalog/bookinstance/create') Create new book instance (copy)
+                a(href='/catalog/bookinstance/create') New Instance
                 
-        div(class='col-sm-9')
+        div(class='col-sm-10')
           block content
           

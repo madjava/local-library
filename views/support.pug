@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1= title
+  div(class='support-section')
+    div(id='left') 
+      img(src='/images/avartar.jpg', height='450px')
+    div(id='right') 
+      div This <a href='https://www.bbc.co.uk/news/blogs-trending-34678592' title="Full info" target='_blank'>meme</a> always makes me laugh whenever i stumble on it, it never gets old,
+                    |  usually when working the frontend part of a project and the styling of the UI just doesnt want to <strong>"play ball"</strong> &#128540;.<br><br>
+                    | I'd usualy laugh and take a short break.<br><br>It also reminds me of how fortunate i am and encourages me to support, when i can 
+                    | organisations that help communities like this and many more who are not as fortunate at the moment.<br><br>
+      div A list of Charities i support. Just incase you want to forfit a few days morning coffee. &#128519;
+        ul
+          li(class='spacer_li') 
+            a(href='https://www.mercyships.org.uk/' target='_blank' title='Mercy Ships') Mercy Ships
+          li(class='spacer_li') 
+            a(href='http://www.lightforce.org.uk/' target='_blank' title='LightForce International') LightForce Internatinoal
+          li(class='spacer_li') 
+            a(href='https://igmindia.org/' target='_blank' title='India Gospel Mission') IGM
+          li(class='spacer_li') 
+            a(href='http://blessingmankind.org/' target='_blank' title='Blessing Manking Community Development') Blessing Manking
+        div They do an amazing job year-in-year-out.

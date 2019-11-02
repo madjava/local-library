@@ -6,5 +6,9 @@ router.get('/', function(req, res) {
   res.redirect('/catalog');
 });
 
+router.get('/support', function(req, res) {
+  res.render('support', { title: 'Support a Charity'});
+});
+
 module.exports = router;
  
